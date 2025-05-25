@@ -793,11 +793,11 @@ while (True):
     print("-------------------------------------------------------------------------------")                                       
     if (menu_code==0):
         print("\n Land Rover Td5 Engine Analysis Program")
-        print("\t\t Ongi Etorri")
+        print("\t\t Welcome")
         print("")
         print(" BSD 2-Clause License")
         print(" Egilea: EA2EGA - Garmen - xabiergarmendia@gmail.com")
-        print(" Erabilitako kodea:")
+        print(" The code used:")
         print("\thttps://github.com/pajacobson/td5keygen")
         print("\t\tpaul@discotd5.com")
         print("\thttp://stackoverflow.com/questions/12090503")
@@ -810,14 +810,14 @@ while (True):
         for p in ports:
             print(("  "+str(p)))
         if len(ports)==1:
-            print(("\n "+str(ports[0]).split(' ')[0]+" Portua Aukeratua"))
+            print(("\n "+str(ports[0]).split(' ')[0]+" Port Selected"))
             serial_port=str(ports[0]).split(' ')[0]
         elif len(ports)>1:
-            sarrera=input("\n Aukeratu Serie Portua: ")
+            sarrera=input("\n Select Serial Port: ")
             print(sarrera)
         else:
-            print("\n Ez da serie porturik topatu sisteman :(")
-            print(" Programa amaitzen")
+            print("\n No serial ports found on the system :(")
+            print(" Finishing the program")
             #exit()
         
         initialize()

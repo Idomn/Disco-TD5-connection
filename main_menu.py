@@ -782,7 +782,7 @@ while (True):
     time.sleep(0.01)
     os.system("cls")
     print("-------------------------------------------------------------------------------")
-    print("|                Land Rover Td5 Motorren Azterketa Programa                   |")
+    print("|                Land Rover Td5 Engine Analysis Program                   |")
     print("-------------------------------------------------------------------------------")
     print("|                                                                             |", end="\r")
     print("| COM Port: %s - Map: %s - Fuel: %s - Homol: %s"% (serial_port,map_variant,fuel_variant,homologation))
@@ -792,7 +792,7 @@ while (True):
     print("| 1. Fuelling - 2. Inputs - 3. Outputs - 4. Settings - 5. Faults - 6. Map     |")
     print("-------------------------------------------------------------------------------")                                       
     if (menu_code==0):
-        print("\n Land Rover Td5 Motorren Azterketa Programa")
+        print("\n Land Rover Td5 Engine Analysis Program")
         print("\t\t Ongi Etorri")
         print("")
         print(" BSD 2-Clause License")
@@ -803,7 +803,7 @@ while (True):
         print("\thttp://stackoverflow.com/questions/12090503")
         print("\t\thttp://stackoverflow.com/users/300783/thomas")
         print("\n")
-        print(" Serie Portu erabilgarriak:")
+        print(" Available Serial Ports:")
 
         import serial.tools.list_ports
         ports = list(serial.tools.list_ports.comports())
@@ -857,7 +857,7 @@ while (True):
         print("\t Manifold Pressure: ", str(aap), " Bar")
         print("\t Air Mass Mater: ", str(maf))
         print("\t External Pressure:", str(ap1), " Bar")
-        print("\t Turbo Pressure (kalkulatua):", str(aap-ap1), " Bar")
+        print("\t Turbo Pressure (calculated):", str(aap-ap1), " Bar")
         print("\t Cylinders: ", str(pb1), " ", str(pb2), " ", str(pb3), " ", str(pb4), " ", str(pb5))
         print("\t EGR Modulation: N/A")
         print("\t EGR Inlet: N/A")
